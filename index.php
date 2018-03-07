@@ -19,10 +19,15 @@
 		include_once( 'pages/navbar.php' );
 		global $pdo;
 		$pdo = connect();
-		include_once( 'messages.php' );
+
+		if ( isset( $_GET['page'] ) ) {
+			if ( $_GET['page'] == 'about' ) include_once ( 'pages/about.php' );
+		} else {
+			include_once( 'pages/messages.php' );
+		}
 	?>
 
-    <script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 </body>
 </html>
