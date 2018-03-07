@@ -54,7 +54,7 @@
 											<a href="#">username</a><br><br>
 											<b><i>' . $row[1] . '</i></b><div class="reply"><a href="#">reply</a></div><br><br>
 											<p>' . $row[3] . '</p>
-											</span>
+										</span>
 									</li>
 								';
 							}
